@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">
+      <span style="color: chartreuse">Rock,</span>
+      <span style="color: darkcyan">Paper</span> &
+      <span style="color: crimson">Scissors</span>
+    </h1>
+    <div class="container">
+      <div class="containerone">
+        <h1 class="y">🧑YOU</h1>
+        <h2 class="choose">CHOOSE ANY</h2>
+        <div class="flex">
+          <button onclick="testr()" class="butts" id="rock" value="rock">
+            <img src="./toppng.com-rock-png-393x229.png" alt="" width="50px" />
+          </button>
+          <button onclick="testp()" class="butts" id="paper" value="paper">
+            <img
+              src="./—Pngtree—torn notebook paper white coil_8243304.png"
+              alt=""
+              width="50px"
+            />
+          </button>
+          <button
+            onclick="tests()"
+            class="butts"
+            id="scissors"
+            value="scissors"
+          >
+            <img src="./PngItem_533588.png" alt="" width="50px" />
+          </button>
+        </div>
+      </div>
+      <div class="containertwo">
+        <h1>🤖BOT</h1>
+        <h1 class="pick">I pick ...</h1>
+        <p id="botresult"></p>
+        <p id="bounce"></p>
+      </div>    
+    </div>
+    <div class="scores">
+      <h2 class="sc">SCORES</h2>
+      <div class="flex2">
+        <div class="yourown">
+          <h2>YOU: <span class="youscore" id="you1">0</span></h2>
+        </div>
+        <div class="botown">
+          <h2>BOT: <span class="youscore" id="bot1">0</span></h2>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

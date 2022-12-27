@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.containerone {
+  width: 40%;
+  text-align: center;
+}
+
+.containertwo {
+  width: 40%;
+  height: 300px;
+  background-color: aqua;
+  text-align: center;
+}
+
+.head {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.choose {
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.butts {
+  cursor: pointer;
+}
+
+.butts:focus {
+  border: 2px solid green;
+}
+
+.y {
+  margin-bottom: 50px;
+}
+
+.pick {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.flex2 {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sc {
+  text-align: center;
+}
+
+.scores {
+  margin-top: 50px;
+}
+
+#botresult {
+  margin-top: 30px;
+}
+
+.dotsload {
+  font-size: 50px;
+}
+
+#bounce {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 565px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .containerone {
+    width: 100%;
+  }
+
+  .containertwo {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
