@@ -46,6 +46,10 @@
   border: 2px solid green;
 }
 
+.butts:active{
+    border: 3px solid green;
+}
+
 .y {
   margin-bottom: 50px;
 }
@@ -85,6 +89,7 @@
   .container {
     display: block;
     width: 100%;
+    padding-top: 30px;
   }
 
   .containerone {
@@ -95,4 +100,6 @@
     width: 100%;
     margin-top: 50px;
   }
+
+
 }
