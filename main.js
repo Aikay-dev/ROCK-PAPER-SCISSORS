@@ -1,7 +1,7 @@
 let botchoice = [
-  '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px">',
-  '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px">',
-  '<img src="./PngItem_533588.png" alt="" width="50px">',
+  '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px"/>',
+  '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px"/>',
+  '<img src="./PngItem_533588.png" alt="" width="50px"/>',
 ];
 // somewhere at the top would be a good place to declare those variables
 
@@ -11,7 +11,7 @@ function tryme() {
     /* This part shows the loading dots for 2 secs */
     document.querySelector("#botresult").innerHTML = disp;
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    rockyvalue = document.querySelector("#rock").innerHTML;
+    rockyvalue = '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px"/>';
 
     /* This part displays the coisce of the bot */
     display = document.querySelector("#rock").value;
@@ -27,7 +27,7 @@ function tryme() {
       document.querySelector("#bounce").innerHTML = "";
     } else if (
       botchoice[index] ==
-      '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px">'
+      '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px"/>'
     ) {
       let value;
       value = document.querySelector("#bot1");
@@ -38,7 +38,7 @@ function tryme() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       document.querySelector("#bounce").innerHTML = "";
     } else if (
-      botchoice[index] == '<img src="./PngItem_533588.png" alt="" width="50px">'
+      botchoice[index] == '<img src="./PngItem_533588.png" alt="" width="50px"/>'
     ) {
       let value;
       value = document.querySelector("#you1");
@@ -56,7 +56,7 @@ function tryme() {
 
     document.querySelector("#botresult").innerHTML = disp;
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    papervalue = document.querySelector("#paper").innerHTML;
+    papervalue = '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px"/>';
 
     display = document.querySelector("#paper").value;
     var index = Math.floor(Math.random() * botchoice.length);
@@ -68,7 +68,7 @@ function tryme() {
       document.querySelector("#bounce").innerHTML = "";
     } else if (
       botchoice[index] ==
-      '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px">'
+      '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px"/>'
     ) {
       let value;
       value = document.querySelector("#you1");
@@ -79,7 +79,7 @@ function tryme() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       document.querySelector("#bounce").innerHTML = "";
     } else if (
-      botchoice[index] == '<img src="./PngItem_533588.png" alt="" width="50px">'
+      botchoice[index] == '<img src="./PngItem_533588.png" alt="" width="50px"/>'
     ) {
       let value;
       value = document.querySelector("#bot1");
@@ -97,7 +97,7 @@ function tryme() {
 
     document.querySelector("#botresult").innerHTML = disp;
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    scissorsvalue = document.querySelector("#scissors").innerHTML;
+    scissorsvalue = '<img src="./PngItem_533588.png" alt="" width="50px"/>';
 
     display = document.querySelector("#scissors").value;
     var index = Math.floor(Math.random() * botchoice.length);
@@ -109,7 +109,7 @@ function tryme() {
       document.querySelector("#bounce").innerHTML = "";
     } else if (
       botchoice[index] ==
-      '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px">'
+      '<img src="./toppng.com-rock-png-393x229.png" alt="" width="50px"/>'
     ) {
       let value;
       value = document.querySelector("#bot1");
@@ -121,7 +121,7 @@ function tryme() {
       document.querySelector("#bounce").innerHTML = "";
     } else if (
       botchoice[index] ==
-      '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px">'
+      '<img src="./—Pngtree—torn notebook paper white coil_8243304.png" alt="" width="50px"/>'
     ) {
       let value;
       value = document.querySelector("#you1");
