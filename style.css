@@ -5,6 +5,70 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.blur{
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.rules{
+  background-color: yellow;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px 20px 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.ex{
+  height: 20px;
+  width: 20px;
+  position: relative;
+  left: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bar1{
+ background-color: rgb(0, 0, 0);
+ width: 6px;
+ height: 20px;
+  position: absolute;
+  rotate: -45deg;
+}
+
+.bar2{
+  background-color: rgb(0, 0, 0);
+  width: 6px;
+  height: 20px;
+  position: absolute;
+  rotate: 45deg;
+ }
+
+.how{
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.rul{
+  margin-top: 20px;
+}
+
+.how2{
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
 .container {
   display: flex;
   padding-top: 100px;
@@ -14,6 +78,8 @@
 .containerone {
   width: 40%;
   text-align: center;
+  background-color: rgb(236, 80, 80);
+
 }
 
 .containertwo {
@@ -21,6 +87,7 @@
   height: 300px;
   background-color: aqua;
   text-align: center;
+
 }
 
 .head {
@@ -85,6 +152,39 @@
   font-size: 30px;
 }
 
+.hide{
+  display: none;
+}
+
+.trph{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.holder{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: none;
+}
+
+.whowon{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 150px;
+  z-index: 5;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  font-size: 50px;
+}
+
 @media screen and (max-width: 565px) {
   .container {
     display: block;
@@ -92,14 +192,36 @@
     padding-top: 30px;
   }
 
+  .rules{
+    width: 80%;
+  }
+
   .containerone {
     width: 100%;
+    height: 300px;
   }
 
   .containertwo {
     width: 100%;
-    margin-top: 50px;
   }
 
 
 }
+
+@media screen and (max-width: 440px) {
+
+.trph{
+  width: 320px;
+}
+
+
+}
+
+@media screen and (max-width: 340px) {
+
+  .trph{
+    width: 280px;
+  }
+  
+  
+  }

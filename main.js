@@ -6,7 +6,9 @@ let botchoice = [
 // somewhere at the top would be a good place to declare those variables
 
 function tryme() {
+  
   window.testr = async function () {
+
     disp = '<span class = "dotsload">....</span>'; //loading dots
     /* This part shows the loading dots for 2 secs */
     document.querySelector("#botresult").innerHTML = disp;
@@ -49,9 +51,28 @@ function tryme() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       document.querySelector("#bounce").innerHTML = "";
     }
+
+    valueyou = document.querySelector("#you1").innerHTML;
+    valuebot = document.querySelector("#bot1").innerHTML;
+  
+    if(parseInt(valueyou) > 4){
+      dull = document.querySelector(".blur");
+      pic = document.querySelector(".holder")
+      dull.style.display = "block";
+      pic.style.display = "block";
+      document.querySelector(".whowon").innerHTML = "YOU WON";
+    }else if(parseInt(valuebot) > 4){
+      dull = document.querySelector(".blur");
+      pic = document.querySelector(".holder")
+      dull.style.display = "block";
+      pic.style.display = "block";
+      document.querySelector(".whowon").innerHTML = "BOT WON";
+    }
+
   };
 
   window.testp = async function () {
+
     disp = '<span class = "dotsload">....</span>';
 
     document.querySelector("#botresult").innerHTML = disp;
@@ -90,9 +111,30 @@ function tryme() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       document.querySelector("#bounce").innerHTML = "";
     }
+
+    valueyou = document.querySelector("#you1").innerHTML;
+    valuebot = document.querySelector("#bot1").innerHTML;
+  
+    if(parseInt(valueyou) > 4){
+      dull = document.querySelector(".blur");
+      pic = document.querySelector(".holder")
+      dull.style.display = "block";
+      pic.style.display = "block";
+      document.querySelector(".whowon").innerHTML = "YOU WON";
+    }else if(parseInt(valuebot) > 4){
+      dull = document.querySelector(".blur");
+      pic = document.querySelector(".holder")
+      dull.style.display = "block";
+      pic.style.display = "block";
+      document.querySelector(".whowon").innerHTML = "BOT WON";
+    }
+
+  };
+
   };
 
   window.tests = async function () {
+
     disp = '<span class = "dotsload">....</span>';
 
     document.querySelector("#botresult").innerHTML = disp;
@@ -132,7 +174,48 @@ function tryme() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       document.querySelector("#bounce").innerHTML = "";
     }
+
+    valueyou = document.querySelector("#you1").innerHTML;
+    valuebot = document.querySelector("#bot1").innerHTML;
+  
+    if(parseInt(valueyou) > 4){
+      dull = document.querySelector(".blur");
+      pic = document.querySelector(".holder")
+      dull.style.display = "block";
+      pic.style.display = "block";
+      document.querySelector(".whowon").innerHTML = "YOU WON";
+    }else if(parseInt(valuebot) > 4){
+      dull = document.querySelector(".blur");
+      pic = document.querySelector(".holder")
+      dull.style.display = "block";
+      pic.style.display = "block";
+      document.querySelector(".whowon").innerHTML = "BOT WON";
+    }
+
   };
-}
 
 tryme();
+
+function hider(rulesheet){
+  rulesheet = document.querySelector(".rules");
+  rulesheet.classList.add("hide")
+}
+
+const div = document.querySelector(".rules");
+const otherElements = document.querySelectorAll("body *:not(.rules)");
+
+otherElements.forEach(el => {
+    el.addEventListener("click", function() {
+        div.style.display = "none";
+    });
+});
+
+
+function hideblur(div, pic){
+  div = document.querySelector(".blur");
+  pic = document.querySelector(".holder")
+  div.style.display = "none";
+  pic.style.display = "none";
+  document.querySelector("#you1").innerHTML = 0;
+  document.querySelector("#bot1").innerHTML = 0;
+}
